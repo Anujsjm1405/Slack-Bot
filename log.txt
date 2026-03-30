@@ -1,0 +1,32 @@
+### 📅 Day 1: Express Server Setup
+
+* ✅ **What I built:**
+  Set up a Node.js backend using Express. Created two routes:
+
+  * `/` → returns a basic server status message
+  * `/test` → returns a JSON response to verify API functionality
+
+* 🧠 **What I learned:**
+
+  * How to initialize a Node.js project using npm
+  * How to install and use Express
+  * How to create routes and handle HTTP responses (`res.send`, `res.json`)
+  * Difference between development and production scripts (`dev` vs `start`)
+  * Importance of using environment variables (`process.env.PORT`) for deployment
+  * Role of nodemon in improving development workflow
+
+* ⚠️ **Problems faced:**
+
+  * Confusion about port handling (hardcoded vs dynamic)
+  * Understanding proper script setup in `package.json`
+
+* 🔧 **How I solved them:**
+
+  * Used `process.env.PORT || 3000` for flexible port configuration
+  * Separated scripts into `dev` (nodemon) and `start` (node)
+  * Moved nodemon to `devDependencies`
+
+* 🚀 **Next step:**
+  Deploy the server to a public platform and make it accessible via a live URL
+
+---
