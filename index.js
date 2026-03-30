@@ -12,4 +12,4 @@ app.get("/test",(req,res)=>{
     })
 })
 
-app.listen(PORT,(req,res)=> console.log(`Server is up and running at ${PORT}!!`))
+app.listen(PORT,()=> console.log(`Server is up and running at ${PORT}!!`))
