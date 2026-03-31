@@ -30,3 +30,29 @@
   Deploy the server to a public platform and make it accessible via a live URL
 
 ---
+### 📅 Day 2: Deployment on Render
+
+* ✅ What I built:
+  Deployed my Express backend application to Render and made it accessible through a public URL.
+
+* 🧠 What I learned:
+
+  * How to deploy a Node.js application on a cloud platform
+  * Difference between build command (`npm install`) and start command (`npm start`)
+  * Importance of environment variables in production
+  * How public APIs work and can be accessed over the internet
+
+* ⚠️ Problems faced:
+
+  * Confusion about correct start command
+  * Understanding deployment configuration
+
+* 🔧 How I solved them:
+
+  * Used `npm start` instead of directly running the file
+  * Configured Render settings properly
+
+* 🚀 Next step:
+  Set up Slack App and connect it with the deployed backend
+
+---
