@@ -56,3 +56,30 @@
   Set up Slack App and connect it with the deployed backend
 
 ---
+### 📅 Day 3: Slack App Integration
+
+* ✅ What I built:
+  Created a Slack app and integrated it with my deployed backend using a slash command (`/analyze`). Successfully established communication between Slack and my server.
+
+* 🧠 What I learned:
+
+  * How Slack apps work and communicate via HTTP requests
+  * How to create and configure slash commands
+  * How Slack sends POST requests to a backend endpoint
+  * How to test real-time API interactions from Slack
+
+* ⚠️ Problems faced:
+
+  * Understanding how Slack connects to backend
+  * Deployment sync issue (route not updating initially)
+
+* 🔧 How I solved them:
+
+  * Added `/slack` POST route in Express
+  * Pushed updated code to GitHub and redeployed on Render
+  * Tested endpoints using Postman before Slack
+
+* 🚀 Next step:
+  Parse Slack request data (`req.body`) and extract user input for processing
+
+---
