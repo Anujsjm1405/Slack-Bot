@@ -12,4 +12,8 @@ app.get("/test",(req,res)=>{
     })
 })
 
+app.post("/slack",(req,res)=>{
+    res.send("Slack route is working")
+})
+
 app.listen(PORT,()=> console.log(`Server is up and running at ${PORT}!!`))
