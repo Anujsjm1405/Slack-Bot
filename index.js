@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express();
 const PORT=process.env.PORT || 3000;
-
+app.use(express.urlencoded({extended:false}))
 app.get("/",(req,res)=>{
     res.send("Server is running!!")
 })
@@ -13,6 +13,8 @@ app.get("/test",(req,res)=>{
 })
 
 app.post("/slack",(req,res)=>{
+    const body=req.body;
+    console.log(req.body)
     res.send("Slack route is working")
 })
 
