@@ -13,9 +13,11 @@ app.get("/test",(req,res)=>{
 })
 
 app.post("/slack",(req,res)=>{
-    const body=req.body;
-    console.log(req.body)
-    res.send("Slack route is working")
+    const text=req.body.text;
+    if(!text){
+        return res.send("Please provide a URL!!")
+    }
+    else return res.send(`Analyzing: ${text}`)
 })
 
 app.listen(PORT,()=> console.log(`Server is up and running at ${PORT}!!`))
