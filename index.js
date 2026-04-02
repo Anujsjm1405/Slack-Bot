@@ -32,7 +32,7 @@ app.post("/slack", async(req,res)=>{
         console.log(response.data);
         return res.send(`Analysis done for: ${url}`);
     } catch (error){
-        console.error(error.message);
+        console.error(error.response?.data || error.message);
         return res.send("Error analyzing the website");
     }
 });
