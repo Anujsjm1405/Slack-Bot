@@ -83,3 +83,33 @@
   Parse Slack request data (`req.body`) and extract user input for processing
 
 ---
+### 📅 Day 4: Handling Slack Input
+
+* ✅ **What I built:**
+  Enhanced the Slack bot backend to read user input from slash commands and respond dynamically based on the provided text.
+
+* 🧠 **What I learned:**
+
+  * How to access request data using `req.body` in Express
+  * How Slack sends data in POST requests (especially the `text` field)
+  * Importance of using middleware (`express.urlencoded`) to parse incoming data
+  * How to create dynamic responses instead of static messages
+  * Basic input validation techniques
+
+* ⚠️ **Problems faced:**
+
+  * Initially used incorrect syntax (`req.body()` instead of `req.body`)
+  * Did not understand why request body was undefined
+  * Handling cases where no input is provided
+
+* 🔧 **How I solved them:**
+
+  * Added `express.urlencoded()` middleware to parse incoming request data
+  * Corrected usage of `req.body`
+  * Extracted `text` field from Slack request
+  * Implemented validation to handle empty input
+
+* 🚀 **Next step:**
+  Validate the input URL and integrate Google PageSpeed Insights API to perform real performance analysis
+
+---
